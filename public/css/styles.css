@@ -1,0 +1,32 @@
+.addTask {
+	margin-bottom: 20px;
+}
+
+#newTask {
+	margin-right: 10px;
+}
+
+.th-id {
+	width: 10%;
+}
+
+.th-text {
+	width: 75%;
+}
+
+.th-actions {
+	width: 15%;
+}
+
+th, td {
+	vertical-align: middle !important;
+}
+
+td > button {
+	margin-right: 10px;
+}
+
+.inline-input {
+	display: block;
+	width: 100%;
+}
