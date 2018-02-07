@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>TODO App - Interview Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <script src="js/crud.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mt-1">
+        <h1>TODO App - Exercise</h1>
+      </div>
+      <p class="lead">Instuctions:</p>
+      <ul>
+        <li>To <b>create</b> a new Task use the input field and green button 'Add Task'</li>
+        <li>
+          To <b>edit</b> a task press the 'Edit' button, an input field will appear and then press <b>Enter</b> when done editing.
+          To cancel the operation press the <b>Escape</b> key.
+        </li>
+        <li>To <b>delete</b> a Task use the red button 'Delete'. <b>WARNING:</b> there's no confirmation..</li>
+      </ul>
+    </div>
+    <div class="container addTask">
+      <form class="form-inline">
+        <input type="text" id="newTask" class="form-control" placeholder="enter text...">
+        <button type="button" id="newTaskButton" class="btn btn-success" onclick="addTask()">Add Task</button>
+      </form>
+    </div>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="th-id">ID</th>
+            <th class="th-text">Text</th>
+            <th class="th-actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr>
+            <th scope="row">no data</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Based on Bootstrap 4 and Sticky Footer Example</span>
+      </div>
+    </footer>
+  </body>
+</html>
